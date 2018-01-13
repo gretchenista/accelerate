@@ -17,17 +17,15 @@ get_header(); ?>
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
-					<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
+					<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 	
-<section class="featured-work">
+<section class="featured-work" style="display:block">
 	<div class="site-content">
-		<div class="featured-work-headline">
 			<h4>Featured Work</h4>
-		</div>
-		<ul class="homepage-featured-work">
+		<ul class="homepage-featured-work" style="width:100%;">
 		<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 			<?php while ( have_posts() ) : the_post();
 				$image_1 = get_field("image_1");
