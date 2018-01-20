@@ -76,6 +76,7 @@ ul.homepage-featured-work {
 
 article.case-study {
 	margin: 40px 0 20px 0;
+	height: auto;
 }
 
 aside.case-study-sidebar {
@@ -94,7 +95,7 @@ div.case-study-images img {
 	margin-top: 10px;
 	margin-bottom: 40px;
 	border: 1px solid #dddddd;
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
